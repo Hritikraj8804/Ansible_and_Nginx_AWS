@@ -114,6 +114,16 @@ The playbook is simple, ensuring dependency installation and content deployment 
 | **2. Ensure Nginx service is running** | `ansible.builtin.service` | Starts the Nginx service and ensures it restarts on reboot (`enabled: yes`). |
 | **3. Deploy custom index.html file** | `ansible.builtin.copy` | Transfers the styled HTML content from the Control Node to the Nginx default root directory (`/var/www/html/`). |
 
+![deployment](https://github.com/user-attachments/assets/379bc18f-baf2-4a6f-9d00-76a136f7f25d)
+
+
+
+## Result
+
+
+![result](https://github.com/user-attachments/assets/ec56585f-cd09-4e5c-af74-464bb8506f6b)
+
+
 ## 🌟 Key Takeaways
 
 * **Idempotency:** The playbook ensures Nginx is *present* and *started*, preventing unnecessary actions if the server is already configured.
